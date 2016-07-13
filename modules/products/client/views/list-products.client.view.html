@@ -14,6 +14,8 @@
         <span data-ng-if="!product.user">Deleted User</span>
       </small>
       <h4 class="list-group-item-heading" data-ng-bind="product.name"></h4>
+      <p class="details" data-ng-bind="product.details"></p>
+      <p class="price" data-ng-bind="product.price"></p>
     </a>
   </div>
   <div class="alert alert-warning text-center" data-ng-if="vm.products.$resolved && !vm.products.length">
